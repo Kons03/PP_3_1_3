@@ -20,19 +20,19 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional
+//    @Transactional
     public List<User> getAllUsers() {
         return userDAO.findAll();
     }
 
     @Override
-    @Transactional
+//    @Transactional
     public User getUser(long id) {
         return userDAO.getById(id);
     }
 
     @Override
-    @Transactional
+//    @Transactional
     public User getUserByUsername(String username) {
         return userDAO.findUserByEmail(username);
     }
